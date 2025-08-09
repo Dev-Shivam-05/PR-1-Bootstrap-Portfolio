@@ -1,0 +1,84 @@
+:root {
+  --theme-white: #ffffff;
+  --theme-dark: #1f1f1f;
+  --theme-light-dark: #a6a6a6;
+  --theme-medium-dark: #2f2f2f;
+}
+.text-dark-css {
+  color: var(--theme-dark) !important;
+}
+.bg-dark-css {
+  background-color: var(--theme-dark) !important;
+}
+.text-light-dark-css {
+  color: var(--theme-light-dark) !important;
+}
+.bg-light-dark-css {
+  background-color: var(--theme-light-dark) !important;
+}
+.text-medium-dark-css {
+  color: var(--theme-medium-dark) !important;
+}
+.bg-medium-dark-css {
+  background-color: var(--theme-medium-dark) !important;
+}
+
+html body {
+  background: var(--theme-dark);
+  color: var(--theme-white);
+}
+main {
+  width: calc(100% - 300px);
+  margin-left: auto;
+}
+
+.divider {
+  height: 100px;
+}
+/* Navigation Starts */
+.active a {
+  color: var(--theme-white) !important;
+}
+
+.navbar .navbar-nav .nav-item a,
+.navbar .navbar-nav .dropdown button,
+.social-links li a,
+.social-links li a .bi {
+  transition: all 0.4s ease;
+}
+.navbar .navbar-nav .nav-item:hover a {
+  color: var(--theme-white) !important;
+}
+.navbar .navbar-nav .dropdown button:hover {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+.social-links li:hover a {
+  background-color: #fff !important;
+}
+.social-links li:hover a .bi {
+  color: var(--theme-medium-dark) !important;
+}
+/* Navigation Ends */
+
+/* Hero's Section Starts */
+/* .hero h1:after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 100px;
+  transform: translate(-40%);
+} */
+.hero h3 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+/* Hero's Section Ends */
